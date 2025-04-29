@@ -28,55 +28,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      form: {
-        date: '',
-        time: '',
-        location_id: ''
-      }
-    };
-  },
-  methods: {
-    async submitBooking() {
-      alert(`Pesan berhasil!\nTanggal: ${this.form.date}\nWaktu: ${this.form.time}\nLokasi: ${this.form.location_id}`);
-    }
-  }
+  name: 'BookingPage'  // Ganti menjadi nama multi-kata
 };
 </script>
-
-<style scoped>
-form {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-</style>
