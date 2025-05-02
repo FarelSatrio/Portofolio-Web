@@ -3,8 +3,11 @@
     <div class="content">
       <h1>Selamat datang di Pemesanan Lapangan Futsal</h1>
       <p>Temukan lapangan futsal terbaik dan pesan langsung di sini!</p>
-      <router-link to="/bookings">
+      <router-link to="/BookingPage">
         <button class="cta-button">Buat Pemesanan</button>
+      </router-link>
+      <router-link to="/SignUp">
+        <button>login</button>
       </router-link>
     </div>
   </div>

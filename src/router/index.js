@@ -1,17 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import Bookings from '../views/Bookings.vue';
+import HomePage from '../views/Home.vue';
+import SignUp from '../views/SignUp.vue';
+import SignIn from '../views/SignIn.vue'; // Pastikan ini digunakan
+import BookingPage from '@/views/Booking.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: HomePage
   },
   {
-    path: '/bookings',
-    name: 'bookings',
-    component: Bookings
+    path: '/booking',
+    name: 'booking',
+    component: BookingPage
+  },
+  {
+    path: '/signup', // Rute untuk halaman SignUp
+    name: 'signup',
+    component: SignUp
+  },
+  {
+    path: '/signin', // Rute untuk halaman SignIn
+    name: 'signin',
+    component: SignIn
   }
 ];
 
